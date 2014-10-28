@@ -12,13 +12,15 @@ elixir(function(mix) {
 });
 ```
 
-This will scan your `resources/assets/durandal` directory for all files.
+This will scan your `/jsapp` directory for all files.
 
 If you'd like to output to a different directory than the default `public/app`, then you may override this as well.
 
 ```
-mix.stylus("app.js", "public/js/foo/bar/");
+mix.durandal("app.js", "public/js/foo/bar/");
 ```
+
+**TODO**: Changing the place where this task looks so you can specify other root locations or so you can use traceur.
 
 ## Thanks
 
